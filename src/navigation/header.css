@@ -1,0 +1,29 @@
+.title {
+    font-weight: 600;
+    font-size  : 32px;
+    line-height: 39px;
+    color      : #0F191D;
+}
+
+.profile {
+    width              : 50px;
+    height             : 50px;
+    background-image   : url('https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg');
+    background-position: center;
+    object-fit         : cover;
+    border-radius      : 50%;
+}
+
+.mr-34 {
+    margin-right: 34px;
+}
+
+.profile-name {
+    font-style : normal;
+    font-weight: 600;
+    font-size  : 16px;
+    line-height: 22px;
+    color      : #211F20;
+    margin-left: 10px;
+    margin-right: 40px;
+}

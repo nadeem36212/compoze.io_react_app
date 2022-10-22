@@ -1,0 +1,16 @@
+.addButton {
+  margin-top: 10px;
+}
+
+.form-check-label {
+  margin-left: 4px;
+}
+
+.form-label {
+  margin-bottom: 10px;
+  font-style   : normal;
+  font-weight  : 400;
+  font-size    : 14px;
+  line-height  : 19px;
+  color: #423B35;
+}

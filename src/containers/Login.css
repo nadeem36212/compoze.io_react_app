@@ -1,0 +1,75 @@
+@media all and (min-width: 480px) {
+    .Login {
+      padding: 60px 0;
+    }
+  
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+  }
+
+  .loginButton{
+    /* width:400px;
+    height:44px; */
+    border-radius:5px;
+    padding:19px, 32px, 19px, 32px;
+    margin: auto;
+  }
+  .loginBlock{
+    width: 720px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .welcomeBox{
+    display:flex;
+     align-items:center;
+     flex-direction:column;
+     margin-left:80px;
+      }
+  .welcomeText{
+    font-family: 'Inter';
+    font-weight:600;
+    font-size:48px;
+    margin-bottom: 15px;
+  }
+  .loginText{
+    font-family: 'Inter';
+    font-weight:500;
+    font-size:24px;
+    margin-bottom: 60px;
+  }
+  .rememberBox{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:400px;
+    margin-left: 80px;
+  }
+  .rememberText{
+    font-size:16px; 
+    font-weight:600; 
+    font-family: 'Open Sans'
+  }
+  .forgotText{
+      font-size:16px; 
+      font-weight:400; 
+      font-family: 'Open Sans'
+  }
+  .accountText{
+    font-size:16px;
+    font-weight:400;
+    font-family:'Open Sans';
+    margin-right:4px;
+  }
+  .signupText{
+    color:#EA6E15;
+    font-size:16px;
+    font-weight:40;
+    font-family: 'Open Sans';
+    cursor:pointer;
+  }

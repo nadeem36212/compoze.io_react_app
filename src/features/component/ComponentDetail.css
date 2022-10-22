@@ -1,0 +1,59 @@
+.paragraph{
+    font-weight:400; 
+    font-size:16px; 
+    font-family:'Open Sans' ;
+    color:#423B35;
+}
+.boldText{
+    font-weight:600;
+     font-size:16px;
+      font-family:'Open Sans'
+}
+.box-shadow{
+    border-bottom: 0.3px  solid #F0F0F0;
+    border-left: 0px;
+    justify-content:space-between;
+    display:flex; 
+    width:510px;
+     height:30px; 
+     background-color:white; 
+     margin-top:20px
+}
+.container1{
+    background-color:white;
+    width:1660px;
+    height:824px; 
+    margin-top: 30px
+}
+.container2{
+    flex-direction:row; 
+    display:flex; 
+    border-radius:6.5px;
+}
+.compazLab{
+    width:429px;
+    height:491px;
+    background-color:#97B4FA; 
+    margin:35px;
+    display:flex; 
+    justify-content:center;
+    align-items:center; 
+    border-radius:6.5px
+}
+.componentText{
+    font-weight:600;
+    font-size:24px;
+    font-family:'Open Sans'
+}
+.paragraphBox{
+    flex-direction:column;
+    display:flex;
+    width:510px;
+    height:30px;
+    background-color:white;
+    margin-top:20px
+}
+.icon{
+    margin-right:-10px;
+    margin-bottom:2px
+}

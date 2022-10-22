@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body,
+html {
+    font-family     : 'Inter' !important;
+    font-size       : 18px;
+    background-color: #FFF !important;
+}
