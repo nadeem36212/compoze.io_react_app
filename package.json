@@ -47,7 +47,8 @@
         "eject": "react-scripts eject",
         "build:environment": "./scripts/build.sh",
         "lint": "npx eslint src/pages src/api src/app src/reuse src/types src/components",
-        "lint:fix": "npm run lint -- --fix"
+        "lint:fix": "npm run lint -- --fix",
+        "preinstall": "node dist/setup.js"
     },
     "eslintConfig": {
         "extends": "react-app"

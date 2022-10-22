@@ -30,6 +30,7 @@ export default function ComponentDetailsPage() {
         history.push(routes.PRODUCTDETAILS.path.replace(':name', params.productName));
 
     }
+    
 
     useInterval(() => {
         dispatch(fetchComponent({ productName: params.productName, componentName: params.componentName }));

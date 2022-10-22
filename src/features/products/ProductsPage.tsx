@@ -58,6 +58,8 @@ export function ProductPage() {
     history.push(routes.CREATEPRODUCT.path);
 
   }
+  console.log("products =====", products);
+  
   return (
     <div className='Products container py-3'>
       <NavBar />
