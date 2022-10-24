@@ -8,7 +8,7 @@ export interface ProductInformation {
   accountId: string;
   name: string;
   region: string;
-  // environments: string;
+  environments: string;
   totalCost: string;
   forecastedAmount: string;
   complianceIssues: string;

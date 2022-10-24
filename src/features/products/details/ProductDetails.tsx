@@ -16,7 +16,7 @@ import { DataTable } from '../../../components/Table';
 import NavBar from '../../../navigation/navbar';
 import routes from '../../../routes';
 import { Component } from '../../component/componentSlice';
-import { fetchProductDetails, selectComponents } from './productDetailsSlice';
+import { fetchProductDetails, selectComponents, ProductDetailsState } from './productDetailsSlice';
 import { search } from '../../../images';
 import DeleteIcon from '../../../images/Icons.svg'
 import SettingButton from '../../../images/Button.png'
@@ -25,6 +25,7 @@ import AddOpenBox from '../../../images/openbox1.svg'
 import logo  from '../../../images/product-detail-logo.svg'
 import arrow  from '../../../images/left-arrow.svg'
 import ReactPaginate from 'react-paginate';
+import Menu from '../../../images/Menu.svg'
 
 export default function ProductDetailsPage() {
   const history = useHistory();
@@ -62,7 +63,7 @@ export default function ProductDetailsPage() {
 }]);
 
 
-  const fetchedComponents: Component[] = useAppSelector(selectComponents);
+  const products: Component[] = useAppSelector(selectComponents);
 
   useEffect(() => {
     dispatch(fetchProductDetails({ productName: params.name }));
@@ -124,9 +125,7 @@ export default function ProductDetailsPage() {
         accessor: 'dash',
         Cell: () => (
           <div style={{flexDirection:"row", display:"flex", gap:3}}>
-          <div style={{width:4, height:4, borderRadius:50, backgroundColor:"#423B35"}}></div>
-          <div style={{width:4, height:4, borderRadius:50, backgroundColor:"#423B35"}}></div>
-          <div style={{width:4, height:4, borderRadius:50, backgroundColor:"#423B35"}}></div>
+            <img src={Menu} />
           </div>
         )
       },
@@ -136,7 +135,7 @@ export default function ProductDetailsPage() {
   useInterval(() => {
     dispatch(fetchProductDetails({ productName: params.name }));
   }, 5000);
-// console.log("fetchProductDetails", fetchProductDetails);
+// console.log("products======", products);
 
   return (
     <div className='App container main-container'  >
@@ -158,7 +157,7 @@ export default function ProductDetailsPage() {
         </Stack>
       </div>
       <div className='  py-3' style={{backgroundColor: ""}} >
-        {fetchedComponents ? (
+        {products ? (
           <div className='product-detail'>
             <div className='side-container'>
 

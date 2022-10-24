@@ -20,12 +20,29 @@ import ModalForm from '../../components/Modal'
 import { search } from '../../images'
 import AccountPage from './Account'
 import {AddIcon} from '@chakra-ui/icons';
+import { Account, fetchAccounts, selectAccountState, } from './accountSlice'
+import { useAppSelector } from '../../app/hooks'
 
 export const AccountList = ()=>{
     const [open, isOpen] = useState<boolean>(false);
     const [expanded, setExpanded] = useState<string[]>([]);
+    const account: Account[] = useAppSelector(selectAccountState);
+    console.log('account is =====', account);
+    
 
     const [data, setData] = useState<any[]>([{
+        id:'497487485',
+        name:'AlbeSan',
+        region:'5 +Region',
+        status:'Lorem ipsum',
+    },
+    {
+        id:'497487485',
+        name:'AlbeSan',
+        region:'5 +Region',
+        status:'Lorem ipsum',
+    },
+{
         id:'497487485',
         name:'AlbeSan',
         region:'5 +Region',

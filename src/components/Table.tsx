@@ -30,6 +30,12 @@ export const DataTable = ({
       data,
     });
 
+    const renderCells=(c:any, i:number)=>{
+                  
+      const value = c.render('Cell');
+      return value ;
+
+    }
   // Render the UI for your table
   return (
     <Box>
@@ -65,10 +71,10 @@ export const DataTable = ({
                   }
                 }}
               >
-                {row.cells.map((cell) => {
+                {row.cells.map((cell, index) => {                
                   return (
                     <Td lineHeight={1.1} {...cell.getCellProps()}>
-                      {cell.render('Cell')}
+                      {renderCells(cell, i)}
                     </Td>
                   );
                 })}

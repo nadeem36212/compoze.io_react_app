@@ -35,6 +35,8 @@ export default function ComponentDetailsPage() {
     useInterval(() => {
         dispatch(fetchComponent({ productName: params.productName, componentName: params.componentName }));
     }, 5000);    
+    console.log("component========", component);
+    
     return (
         <div className=' py-3'>
             {/* <NavBar /> */}
